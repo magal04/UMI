@@ -30,17 +30,25 @@
 
 
 
-      <h3>Contact Form</h3>
 
       <div class="container">
+        <h3>Contact Form</h3>
+
         <form action="#">
           <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          <!-- <p id="fname_error"></p> -->
-      
+          <input type="text" id="fname" name="firstname" placeholder="Your name.. " onchange="handleInput()">
+           <div class="input_error">
+            <small id="fname_error"></small>
+             </div>
+             <br/>
+
           <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.." onchange="handleInput()">
+          
+          <div class="input_error">
+          <small id="lname_error"></small>
+           </div> 
+           <br/>
           <label for="country">Country</label>
           <select id="country" name="country">
             <option value="australia">Australia</option>
@@ -61,7 +69,9 @@
 </body>
 
 <script>
-
+ function handleInput (){
+     var isValid = validateForm();
+  }
 
   function handleSubmit (){
      // alert('Hello');
@@ -78,19 +88,28 @@
   function validateForm (){
     var isValid = true;
     var firstname = document.getElementById('fname').value;
+    var lastname = document.getElementById('lname').value;
+
 
     if(firstname.length < 2){
       isValid = false;
-      //document.getElementById('fname_error').text = 'First name is required!';
-      
-      alert('First name is required!');
+      document.getElementById('fname_error').innerHTML = 'First name is required!';
+      // alert('First name is required!');
     }
 
-    var lastname = document.getElementById('lname').value;
+    else {
+      document.getElementById('fname_error').innerHTML = '';
+    }
+
     if (lastname.length < 2){
-    isValid = false;
-    alert('Last name is required!');
-  }
+    isValid = false;      
+    document.getElementById('lname_error').innerHTML = 'Last name is required!';
+    // alert('Last name is required!');
+    }
+    else {
+    document.getElementById('lname_error').innerHTML = '';
+
+    }
 
     return isValid;
 }

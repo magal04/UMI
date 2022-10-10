@@ -32,4 +32,10 @@ margin: auto;
   padding: 20px;
   width: 60%;
 }
-
+h3 {
+  text-align: center;
+}
+.input_error{
+  color: red;
+  margin-top: -15px;
+}
