@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magal 2022</title>
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="./about.css">
+
+</head>
+
+<body>
+          <!-- ------------------------nav------------------------ -->
+
+    <ul>
+        <li class="nav"><a href="./index.html" >Home</a></li>
+        <li class="nav"><a href="./quran.html">Quran</a></li>
+        <li class="nav"><a href="./Khassida.html">Khassida</a></li>
+        <li class="nav"><a href="./programme.html">Programme</a></li>
+        <li class="nav"><a href="./about.html" class="active">About</a></li>
+      </ul>
+      <!-- ------------------------sub-header------------------------ -->
+      <section class="sub-header">
+
+        <div>
+          <h1>UNITED MURIDS OF INDIANA</h1>
+          <p>About</p>
+        </div>      
+          </section>
+
+
+
+
+      <h3>Contact Form</h3>
+
+      <div class="container">
+        <form action="#">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <!-- <p id="fname_error"></p> -->
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit" onclick="handleSubmit()">
+        </form>
+      </div>
+      <!-- <footer></footer> -->
+
+
+
+</body>
+
+<script>
+
+
+  function handleSubmit (){
+     // alert('Hello');
+     var isValid = validateForm();
+
+     if (isValid) {
+      alert('Form submitted');
+     }
+     else {
+      alert ('Form is not Valid');
+     }
+  }
+
+  function validateForm (){
+    var isValid = true;
+    var firstname = document.getElementById('fname').value;
+
+    if(firstname.length < 2){
+      isValid = false;
+      //document.getElementById('fname_error').text = 'First name is required!';
+      
+      alert('First name is required!');
+    }
+
+    var lastname = document.getElementById('lname').value;
+    if (lastname.length < 2){
+    isValid = false;
+    alert('Last name is required!');
+  }
+
+    return isValid;
+}
+
+</script>
+</html>
