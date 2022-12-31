@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Magal 2022</title>
+    <link rel="stylesheet" href="./nav.css">
+
+</head>
+
+<body>
+          <!-- ------------------------nav------------------------ -->
+          
+    <ul>
+        <li class="nav"><a href="./index.html" class="active">Home</a></li>
+        <li class="nav"><a href="./quran.html">Quran</a></li>
+        <li class="nav"><a href="./Khassida.html">Khassida</a></li>
+        <li class="nav"><a href="./programme.html">Programme</a></li>
+        <li class="nav"><a href="./about.html">About</a></li>
+      </ul>
+      <!--------------------------header------------------------ -->
+
+      <div class="header">
+        <h1>UNITED MURIDS OF INDIANA</h1>
+        <p>Touba Indiana</p>
+      </div>
+            <!-- ------------------------content------------------------ -->
+        
+    </div>
+    <p>HERE IS THE LINK FORM</p>
+    <button class="open-button" onclick="openForm()">Click Here</button>
+<div class="popup" id = "myForm">
+
+        <div class="formquestion">
+        <form action="mailto:rahmansylla9@gmail.com" method="POST" class="formQuestion">
+
+         <fieldset>
+          <legend class="legendQuestion">Question for Magal Jaalibatou Maraaxib</legend>
+          <label for="firstname">First Name: </label>
+          <input type="text" name="firstname" value="" placeholder="First Name" required><br>
+
+          <label for="lastname">Last Name: </label>
+          <input type="text" name="lastname" value="" placeholder="Last Name" required><br>
+
+          <label for="phone">Phone Number: </label>
+          <input type="tel" name="phone" value="" placeholder="Phone Number" required><br>
+
+          <label for="email">E-mail: </label>
+          <input type="email" name="email" value="" placeholder="E-mail" required><br>
+          
+          <p>Question:</p>
+          <textarea rows="4" cols=""></textarea><br>
+
+          <input type="submit" value="SEND" class="btn">
+          <!-- <button type="submit" class="btn">SEND</button> -->
+          <input type="button" class="btn cancel"  value = "Close" onclick="closeForm()">
+
+         </fieldset> 
+        </form>
+      
+      </div>
+    
+    </div>
+
+      <!-- ------------------------sub-content------------------------ -->
+
+      <!-- <div class="sub-content">
+        <h1  id="quran.html">Quran</h1>
+        <h3> Book of Allah </h2>
+        </div> -->
+
+        
+
+  <footer>
+    <p>Author: UMI~United Murids Of Indiana</p>
+    <ul>
+      <li>Contact: (317) 800 45 67</li>
+      <li>Email: <a href="mailto:me.com">umi@info.com</a></li>
+      <li>Website: <a href="www.umi.org">www.umi.org</a></li>
+    </ul>
+    &copy  UMI<br>
+  </footer>
+
+
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+
+   
+</body> 
+</html>
