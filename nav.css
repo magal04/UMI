@@ -238,3 +238,14 @@ background-color:  rgb(105, 10, 10);
 span {
   font-weight: bold;
 }
+.videoKurel h2 ,h3{
+  text-align: center;
+  }
+  .videoKurel iframe{
+    text-align: left;
+    /* float: left; */
+  }
+  
+  .right {
+    float: right;
+  }
