@@ -241,6 +241,7 @@ background-color:  rgb(105, 10, 10);
 span {
   font-weight: bold;
 }
+<<<<<<< HEAD
 
 .videoKurel h2 ,h3{
 text-align: center;
@@ -253,3 +254,16 @@ text-align: center;
 .right {
   float: right;
 }
+=======
+.videoKurel h2 ,h3{
+  text-align: center;
+  }
+  .videoKurel iframe{
+    text-align: left;
+    /* float: left; */
+  }
+  
+  .right {
+    float: right;
+  }
+>>>>>>> 2ab8f03c83b97b568ba28c6648f371659c640c63
