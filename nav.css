@@ -52,6 +52,9 @@ ul {
     /* background-image: url(./public/images/backimg.JPG); */
   
   }
+  .header p {
+    text-align: center;
+  }
   /* .sub-content {
     padding: 20px;
     text-align: center;
@@ -237,4 +240,16 @@ background-color:  rgb(105, 10, 10);
 
 span {
   font-weight: bold;
+}
+
+.videoKurel h2 ,h3{
+text-align: center;
+}
+.videoKurel iframe,p{
+  text-align: left;
+  /* float: left; */
+}
+
+.right {
+  float: right;
 }
